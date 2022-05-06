@@ -6,31 +6,31 @@
             <h2>Edit advertisement </h2>
             <form action="/ad/update/{{ ad._id['$oid'] }}" method="post">
                 <div class="form-group">
-                    <label for="add-name">Title</label>
+                    <label for="add-name">Titulo</label>
                     <input class="form-control" id="add-name" name="title" value="{{ ad.title }}" required/>
                 </div>
                 <div class="form-group">
-                    <label for="add-current_city">City</label>
+                    <label for="add-current_city">Ciudad</label>
                     <input class="form-control" id="add-current_city" name="city" value="{{ ad.city }}" required/>
                 </div>
                 <div class="form-group">
-                    <label for="add-current_state">Description</label>
+                    <label for="add-current_state">Descripcion</label>
                     <input class="form-control" id="add-current_state" name="description" value="{{ ad.description }}" required/>
                 </div>
                 <div class="form-group">
-                    <label for="add-email">Email</label>
+                    <label for="add-email">Correo electronico</label>
                     <input class="form-control" id="add-email" name="email" value="{{ ad.email }}" required/>
                 </div>
                 <div class="form-group">
-                    <label for="add-bio">Image Url</label>
+                    <label for="add-bio">URL de la Image</label>
                     <input class="form-control" id="add-bio" name="imgUrl" value="{{ ad.imgUrl }}" required/>
                 </div>
                 <div class="form-group">
-                    <label for="add-speaker_rate">Price</label>
+                    <label for="add-speaker_rate">Precio</label>
                     <input class="form-control" id="add-speaker_rate" name="price" value="{{ ad.price }}" required/>
                 </div>
-                <button type="submit" class="btn btn-primary">Confirm Update</button>
-                <a class="btn btn-default" href="/">Cancel</a>
+                <button type="submit" class="btn btn-primary">Actualizar</button>
+                <a class="btn btn-default" href="/">Cancelar</a>
             </form>
         </div>
     </div>
