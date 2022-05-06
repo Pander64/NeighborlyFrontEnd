@@ -5,9 +5,9 @@
         <div>
             <h2>Delete {{ ad.title }}</h2>
             <form action="/ad/delete/{{ ad._id['$oid'] }}" method="post">
-                <p>The action cannot be undone.</p>
-                <button type="submit" class="btn btn-danger">Delete</button>
-                <a class="btn btn-default" href="/">Cancel</a>
+                <p>¿Seguro que desea eliminar?.</p>
+                <button type="submit" class="btn btn-danger">Eliminar</button>
+                <a class="btn btn-default" href="/">Cancelar</a>
             </form>
         </div>
     </div>

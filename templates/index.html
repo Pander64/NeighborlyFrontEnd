@@ -7,28 +7,28 @@
                <div class="card">
                    <ul class="list-group list-group-flush">
                          <li class="list-group-item">
-                            <div class="h5">My Tienda</div>
-                            <p>Welcome to your community app.</p>
+                            <div class="h5">Mi Tienda Vintage</div>
+                            <p>Bienvenido a la comunidad de la tienda.</p>
                          </li>
                      </ul>
                     <ul class="list-group list-group-flush">
                          <li class="list-group-item">
-                            <div class="h6 text-muted"><a href="/">Marketplace</a></div>
+                            <div class="h6 text-muted"><a href="/">Tienda</a></div>
                         </li>
-                        <li class="list-group-item">
-                            <div class="h6 text-muted">Upcoming Events</div>
-                        </li>
-                        <li class="list-group-item">
-                            <div class="h6 text-muted">Crime and Safety</div>
-                        </li>
+{#                        <li class="list-group-item">#}
+{#                            <div class="h6 text-muted">Upcoming Events</div>#}
+{#                        </li>#}
+{#                        <li class="list-group-item">#}
+{#                            <div class="h6 text-muted">Crime and Safety</div>#}
+{#                        </li>#}
                     </ul>
                 </div>
             </div><!-- end col-md-3 -->
 
             <div class="col-md-6">
                 <!--- Advertestiment section -->
-                <h3> Community Marketplace </h3>
-                <div class="mx-auto add-div"><a id="add-ad-button" class="btn btn-neighborly" href="/ad/add">Create a new ad </a></div>
+                <h3> Comunidad de la tienda </h3>
+                <div class="mx-auto add-div"><a id="add-ad-button" class="btn btn-neighborly" href="/ad/add">Crear una nuevo anuncio </a></div>
                 {% for a in ads %}
                 <div class="panel">
                     <div class="panel-body panel-neighborly">
@@ -39,8 +39,8 @@
                         <p><img class="img-small" width="200" src={{a.imgUrl}}></p>
                     </div><!-- end panel body -->
                     <div class="panel-footer">
-                        <a class="btn btn-warning btn-xs" href="ad/edit/{{ a._id['$oid'] }}">Update</a>
-                        <a class="btn btn-danger btn-xs" href="ad/delete/{{ a._id['$oid'] }}">Delete</a>
+                        <a class="btn btn-warning btn-xs" href="ad/edit/{{ a._id['$oid'] }}">Actualizar</a>
+                        <a class="btn btn-danger btn-xs" href="ad/delete/{{ a._id['$oid'] }}">Eliminar</a>
                     </div>
                  </div><!-- end panel  -->
                 {% endfor %}       
@@ -52,19 +52,23 @@
                         <p class="text-muted"> {{ p.description }}</p>
                         <p><img class="img-small" width="200" src={{p.imgUrl}}></p>
                     </div><!-- end card-body -->
+{#                   <div class="panel-footer">#}
+{#                        <a class="btn btn-warning btn-xs" href="ad/edit/">Actualizar {{ p._id }}</a>#}
+{#                        <a class="btn btn-danger btn-xs" href="ad/delete/">Eliminar</a>#}
+{#                    </div>#}
                  </div><!-- end card -->
-                {% endfor %}       
+                {% endfor %}
                
          </div><!-- end col-md-6 -->
-        <div class="col-md-3">
-            <div class="card">
-                    <div class="card-body">
-                    <div class="h5">Advertisements</div>
-                    <div class="h7 text-muted">Maps</div>
-                    <div class="h7">Recommendations</div>
-                </div>
-            </div>
-        </div><!-- end col-md-3 -->
+{#        <div class="col-md-3">#}
+{#            <div class="card">#}
+{#                    <div class="card-body">#}
+{#                    <div class="h5">Advertisements</div>#}
+{#                    <div class="h7 text-muted">Maps</div>#}
+{#                    <div class="h7">Recommendations</div>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div><!-- end col-md-3 -->#}
     </div><!-- end row -->
 </div
 {% endblock %}
